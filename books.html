@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books | Book Haven</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.yellow.min.css">
+    <style>
+        /* Add some custom styling to the book images */
+        .book-list article {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .book-list img {
+            max-width: 150px;  /* Adjust size to fit your design */
+            height: auto;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
         <nav>
             <div class="logo">
@@ -20,37 +31,35 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
         </nav>
     </header>
 
-    <!-- Featured Books Section -->
-    <section class="books">
-        <h2>Featured Books</h2>
-        <div class="book-grid">
-            <div class="book">
+    <main>
+        <h2>Our Books</h2>
+        <section class="book-list">
+            <article>
                 <img src="images/book1.jpg" alt="Rich Dad Poor Dad">
                 <h3>Rich Dad Poor Dad</h3>
-                <p>A powerful guide to financial independence through investing, managing money, and achieving success.</p>
-            </div>
-            <div class="book">
-                <img src="images/book2.jpg" alt="The Psychology Of Money">
-                <h3>The Psychology Of Money</h3>
-                <p>Explores how emotions and behaviors shape our financial decisions, and how to make better choices.</p>
-            </div>
-            <div class="book">
+                <p>A great book about... </p>
+                <a href="#">Buy Now</a>
+            </article>
+            <article>
+                <img src="images/book2.jpg" alt="The Psychology of Money">
+                <h3>The Psychology of Money</h3>
+                <p>A great book about... </p>
+                <a href="#">Buy Now</a>
+            </article>
+            <article>
                 <img src="images/book3.jpg" alt="Atomic Habits">
                 <h3>Atomic Habits</h3>
-                <p>Reveals how tiny habits can compound into significant results in personal growth and achievement.</p>
-            </div>
-        </div>
-    </section>
+                <p>A great book about... </p>
+                <a href="#">Buy Now</a>
+            </article>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Book Haven | All Rights Reserved</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
