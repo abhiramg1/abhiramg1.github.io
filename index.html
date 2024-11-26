@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Haven</title>
+    <title>Book Haven | Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,67 +14,36 @@
                 <h1>Book Haven</h1>
             </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#books">Books</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Welcome to Book Haven</h2>
-            <p>Your go-to bookstore for the latest and greatest in literature.</p>
-            <a href="#books" class="btn">Browse Books</a>
-        </div>
-    </section>
+ <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Book Haven</h2>
+        <p>Your go-to bookstore for the latest and greatest in literature.</p>
+        <a href="books.html" class="btn">Browse Books</a>
+    </div>
+    <img src="images/hero.jpg" alt="Books" class="hero-image">
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Book Haven is a local bookstore offering a wide selection of books from all genres. Whether you're looking for fiction, non-fiction, or children's books, we have something for everyone. Visit us and immerse yourself in the world of literature.</p>
-    </section>
+<!-- YouTube Video Section -->
+<section id="video" class="video-section">
+    <h2>Watch Our Story</h2>
+    <p>Learn more about our bookstore and the team behind Book Haven.</p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WtGzX4th7wI?si=SAGH0H1Z32FWvgRz" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
 
-    <!-- Featured Books Section -->
-    <section id="books" class="books">
-        <h2>Featured Books</h2>
-        <div class="book-grid">
-            <div class="book">
-                <img src="images/book1.jpg" alt="Book 1">
-                <h3>Rich Dad Poor Dad</h3>
-                <p>Rich Dad Poor Dad contrasts traditional job security versus financial independence.</p>
-            </div>
-            <div class="book">
-                <img src="images/book2.jpg" alt="Book 2">
-                <h3>The Psychology Of Money</h3>
-                <p>*The Psychology of Money* explores how emotions and behavior influence financial decisions.</p>
-            </div>
-            <div class="book">
-                <img src="images/book3.jpg" alt="Book 3">
-                <h3>Atomic habbits</h3>
-                <p>*Atomic Habits* explores how small, consistent changes can lead to significant personal growth.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to inquire about our books? Get in touch with us!</p>
-        <form action="#" method="POST">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Book Haven | All Rights Reserved</p>
-    </footer>
-
-</body>
-</html>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Book Haven | All Rights Reserved</p>
+</footer>
