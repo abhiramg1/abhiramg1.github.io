@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -39,11 +38,26 @@ header ul li a {
     font-size: 1.2rem;
 }
 
-.hero {
-    background-color: #009688;
+button.dark-mode-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
     color: white;
-    padding: 5rem 2rem;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: #000000;
+    color: white;
     text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero .hero-image {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+    border-radius: 8px;
 }
 
 .hero h2 {
@@ -51,26 +65,22 @@ header ul li a {
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 1rem 0;
 }
 
 .hero .btn {
     background-color: #ff9800;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 2rem;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem;
 }
 
-.about, .contact {
+.about, .books, .contact, .blog {
     padding: 3rem 2rem;
     text-align: center;
-}
-
-.books {
-    padding: 3rem 2rem;
-    background-color: #eeeeee;
 }
 
 .books .book-grid {
@@ -80,27 +90,25 @@ header ul li a {
     flex-wrap: wrap;
 }
 
-.books .book {
+.book {
     background-color: white;
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
     text-align: center;
 }
 
-.books .book img {
+.book img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.books .book h3 {
+.book h3 {
     margin-top: 1rem;
-    font-size: 1.5rem;
 }
 
-.books .book p {
+.book p {
     font-size: 1rem;
     color: #555;
 }
@@ -117,7 +125,6 @@ header ul li a {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
 }
 
 .contact .btn {
@@ -140,3 +147,44 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .book {
+        width: 100%;
+    }
+    /* Video Section */
+.video-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.video-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 960px;
+    height: 540px;
+    border: none;
+}
+
+}
+
+
